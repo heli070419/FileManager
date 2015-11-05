@@ -43,10 +43,3 @@ function createFile($filename){
         return "Illegle file name";
     }
 }
-
-function doEdit($filename,$path,$content){
-    $success = file_put_contents($filename,$path,FILE_APPEND,$content);
-    
-    return $success;
-    
-}
